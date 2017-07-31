@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.erickogi14gmail.rog.Events.EventsDetails"
+    tools:showIn="@layout/activity_events_details">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/event_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Google I/O Extended Eldoret"
+            android:textColor="@color/blacktext"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/event_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="6dp"
+            android:text="River Of God Youth Department"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp">
+
+            <LinearLayout
+                android:onClick="calendarEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_weight="3"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content">
+                <ImageView
+                    android:onClick="calendarEvent"
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_event_note_black_24dp"
+                    android:backgroundTint="@color/blacktext" />
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp">
+
+                    <TextView
+                        android:id="@+id/event_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Friday, May 26" />
+
+                    <TextView
+                        android:id="@+id/event_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/event_date"
+                        android:paddingTop="3dp"
+                        android:text="9:00 AM - 5:00 PM" />
+                </RelativeLayout>
+</LinearLayout>
+<ImageView
+    android:layout_weight="1"
+    android:src="@drawable/ic_chevron_right_black_24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/line" />
+            <LinearLayout
+                android:onClick="mapsEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="16dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                    android:onClick="mapsEvent"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_place_black_24dp"
+                    android:backgroundTint="@color/blacktext" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp">
+
+                    <TextView
+                        android:id="@+id/event_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Moi Univerity" />
+
+
+                </RelativeLayout>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_chevron_right_black_24dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:textColor="@color/blacktext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event Description"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/event_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:text="@string/event_desc"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/content"
+        android:layout_gravity="right"
+        app:layout_anchorGravity="bottom|right"
+        app:srcCompat="@android:drawable/ic_menu_share" />
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>

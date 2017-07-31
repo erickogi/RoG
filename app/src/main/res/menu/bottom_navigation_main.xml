@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+
+        android:id="@+id/action_sermons"
+
+        android:enabled="true"
+
+        android:icon="@drawable/ic_dashboard_black_24dp"
+
+        android:title="@string/action_sermons"
+
+        app:showAsAction="ifRoom" />
+
+
+    <item
+
+        android:id="@+id/action_notices"
+
+        android:enabled="true"
+
+        android:icon="@drawable/ic_notifications_white_24dp"
+
+        android:title="@string/action_notices"
+
+        app:showAsAction="ifRoom" />
+
+    <item
+
+        android:id="@+id/action_events"
+
+        android:enabled="true"
+
+        android:icon="@drawable/ic_event_black_24dp"
+
+        android:title="@string/action_events"
+
+        app:showAsAction="ifRoom" />
+    <!--<item-->
+
+        <!--android:id="@+id/action_others"-->
+
+        <!--android:enabled="true"-->
+
+        <!--android:icon="@drawable/ic_list_black_24dp"-->
+
+        <!--android:title="@string/action_others"-->
+
+        <!--app:showAsAction="ifRoom" />-->
+
+</menu>

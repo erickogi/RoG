@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_margin="@dimen/menuCardMargin"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+
+            <!--android:elevation="0dp"-->
+            <!--android:id="@+id/openLocate"-->
+            <!--android:padding="0dp"-->
+            <!--app:cardCornerRadius="0dp"-->
+
+
+            <!--&gt;-->
+            <LinearLayout
+                android:layout_margin="18dp"
+                android:layout_weight="1"
+                android:id="@+id/openLocate"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_add_location_black_24dp"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/blacktext"
+                    android:textAlignment="center"
+                    android:text="Locate "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+     <!--//   </android.support.v7.widget.CardView>-->
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_margin="@dimen/menuCardMargin"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+
+            <!--android:elevation="0dp"-->
+            <!--android:id="@+id/openSearch"-->
+            <!--android:padding="0dp"-->
+            <!--app:cardCornerRadius="0dp"-->
+
+
+            <!--&gt;-->
+            <LinearLayout
+                android:layout_margin="18dp"
+                android:id="@+id/openSearch"
+                android:orientation="vertical"
+
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_search_black_24dp"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/blacktext"
+                    android:textAlignment="center"
+                    android:text="Search Text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        <!--</android.support.v7.widget.CardView>-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="9dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_margin="@dimen/menuCardMargin"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+
+            <!--android:elevation="0dp"-->
+            <!--android:id="@+id/openBookmarks"-->
+            <!--android:padding="0dp"-->
+            <!--app:cardCornerRadius="0dp"-->
+
+
+            <!--&gt;-->
+            <LinearLayout
+                android:layout_margin="18dp"
+                android:id="@+id/openBookmarks"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_bookmark_black_24dp"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/blacktext"
+                    android:textAlignment="center"
+                    android:text="Bookmarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        <!--</android.support.v7.widget.CardView>-->
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_margin="@dimen/menuCardMargin"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+
+            <!--android:elevation="0dp"-->
+            <!--android:id="@+id/openSettings"-->
+            <!--android:padding="0dp"-->
+            <!--app:cardCornerRadius="0dp"-->
+
+
+            <!--&gt;-->
+            <LinearLayout
+                android:layout_margin="18dp"
+                android:id="@+id/openSettings"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_weight="2"
+                    android:src="@drawable/ic_settings_applications_black_24dp"
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    android:textColor="@color/blacktext"
+                    android:textAlignment="center"
+                    android:text="Settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        <!--</android.support.v7.widget.CardView>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+    </LinearLayout>
+
+</LinearLayout>

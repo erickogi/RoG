@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_audio_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.erickogi14gmail.rog.utills.AudioPlayer"
+    tools:showIn="@layout/activity_audio_player">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <WebView
+
+
+            android:id="@+id/webView"
+            android:linksClickable="true"
+
+            android:textIsSelectable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+    <RelativeLayout
+
+        android:backgroundTint="@color/line"
+        android:layout_weight="1"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <Button
+        android:backgroundTint="@color/colorAccent"
+
+        android:onClick="play"
+        android:id="@+id/btn_play"
+        android:layout_marginBottom="40dp"
+        android:background="@android:drawable/ic_media_play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        style="@style/Base.Theme.AppCompat.Dialog" />
+    <!--<Button-->
+        <!--android:onClick="stop"-->
+        <!--android:id="@+id/btn_stop"-->
+        <!--android:layout_marginBottom="40dp"-->
+        <!--android:background="@android:drawable/ic_media_rew"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--style="@style/Base.Theme.AppCompat.Dialog" />-->
+    <Button
+        android:backgroundTint="@color/colorAccent"
+
+
+        android:onClick="pause"
+        android:id="@+id/btn_pause"
+        android:layout_marginBottom="40dp"
+        android:background="@android:drawable/ic_media_pause"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        style="@style/Base.Theme.AppCompat.Dialog" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

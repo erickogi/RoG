@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/churchlogo"
+
+
+    >
+    <android.support.v7.widget.CardView
+        android:id="@+id/todays_thought"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="2"
+        android:elevation="3dp"
+
+        android:padding="0dp"
+        app:cardCornerRadius="3dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/todays_thought_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/ic_import_contacts_black_24dp"
+                    android:backgroundTint="@color/colorAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/todays_thought_image"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/todays_thought_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:paddingTop="6dp"
+                        android:text="God's Grace Is Suffucient"
+                        android:textColor="@color/blacktext" />
+
+                    <TextView
+                        android:id="@+id/todays_thought_preview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="6dp"
+                        android:text="His grace is not only amazing, it is 'sufficient'. It is enough" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/line" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="6dp"
+                        android:paddingTop="6dp">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txt_click"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text=" Read Today's pastors Message" />
+    <ImageView
+        android:layout_weight="1"
+        android:src="@drawable/ic_chevron_right_black_24dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@id/todays_thought"
+        android:id="@+id/menu_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_weight="2"
+        android:elevation="3dp"
+
+        android:padding="0dp"
+        app:cardCornerRadius="3dp"
+        app:cardUseCompatPadding="true">
+
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/churchlogo"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="@dimen/menuCardMargin"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:elevation="3dp"
+                android:id="@+id/openSermons"
+                android:padding="0dp"
+                app:cardCornerRadius="3dp"
+                app:cardUseCompatPadding="true"
+
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ic_subject_black_24dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:textColor="@color/blacktext"
+                        android:textAlignment="center"
+                        android:text="Sermons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                android:layout_margin="@dimen/menuCardMargin"
+                android:id="@+id/openHyms"
+                android:padding="0dp"
+                app:cardCornerRadius="3dp"
+                app:cardUseCompatPadding="true">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/ic_library_music_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_margin="4dp"
+        android:textColor="@color/blacktext"
+        android:textAlignment="center"
+        android:text="Hymns \Songs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                android:id="@+id/openServicesShedules"
+                android:padding="4dp"
+                android:layout_margin="@dimen/menuCardMargin"
+                app:cardCornerRadius="3dp"
+                app:cardUseCompatPadding="true"
+                >
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ic_view_day_black_24dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:textColor="@color/blacktext"
+                        android:textAlignment="center"
+                        android:text="Services"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:elevation="3dp"
+                    android:id="@+id/openBible"
+                    android:padding="0dp"
+                    android:layout_margin="@dimen/menuCardMargin"
+                    app:cardCornerRadius="3dp"
+                    app:cardUseCompatPadding="true"
+
+                    >
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_chrome_reader_mode_black_24dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:layout_margin="4dp"
+                            android:textColor="@color/blacktext"
+                            android:textAlignment="center"
+                            android:text="Bible"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_margin="@dimen/menuCardMargin"
+                    android:layout_height="wrap_content"
+                    android:elevation="3dp"
+                    android:id="@+id/openAppointment"
+                    android:padding="0dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardUseCompatPadding="true">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_today_black_24dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:layout_margin="4dp"
+                            android:textColor="@color/blacktext"
+                            android:textAlignment="center"
+                            android:text="Appointment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:elevation="3dp"
+                    android:layout_margin="@dimen/menuCardMargin"
+                    android:id="@+id/openPrayer"
+                    android:padding="4dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_redeem_black_24dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:layout_margin="4dp"
+                            android:textColor="@color/blacktext"
+                            android:textAlignment="center"
+                            android:text="Prayers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                 android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:elevation="3dp"
+                    android:id="@+id/openDepartments"
+                    android:padding="0dp"
+                    android:layout_margin="@dimen/menuCardMargin"
+                    app:cardCornerRadius="3dp"
+                    app:cardUseCompatPadding="true"
+
+                    >
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_view_module_black_24dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:layout_margin="4dp"
+                            android:textColor="@color/blacktext"
+                            android:textAlignment="center"
+                            android:text="Departments"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_margin="@dimen/menuCardMargin"
+                    android:layout_height="wrap_content"
+                    android:elevation="3dp"
+                    android:id="@+id/openChats"
+                    android:padding="0dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardUseCompatPadding="true">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_people_black_24dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:layout_margin="4dp"
+                            android:textColor="@color/blacktext"
+                            android:textAlignment="center"
+                            android:text="Connect"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:elevation="3dp"
+                    android:layout_margin="@dimen/menuCardMargin"
+                    android:id="@+id/openAbout"
+                    android:padding="4dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:src="@drawable/ic_account_balance_wallet_black_24dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:layout_margin="4dp"
+                            android:textColor="@color/blacktext"
+                            android:textAlignment="center"
+                            android:text="Give"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+<ImageView
+    android:scaleType="centerCrop"
+    android:fitsSystemWindows="true"
+    android:src="@drawable/congretion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>
