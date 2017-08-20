@@ -1,11 +1,13 @@
 package com.erickogi14gmail.rog.Bible;
 
+import java.io.Serializable;
+
 /**
  * Created by kimani kogi on 7/28/2017.
  */
 
-public class BiblePojo {
-       private  int id;
+public class BiblePojo implements Serializable {
+       private      int id;
        private      int b;
        private      int c;
        private      int v;

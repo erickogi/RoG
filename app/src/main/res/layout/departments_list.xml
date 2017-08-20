@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/elders_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardsMarginTop"
+                android:layout_weight="2"
+                android:elevation="@dimen/cardElevation"
+
+                android:padding="0dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/youths_image"-->
+                            <!--android:layout_width="50dp"-->
+                            <!--android:layout_height="50dp"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:layout_marginLeft="3dp"-->
+                            <!--android:layout_marginRight="4dp"-->
+                            <!--android:background="@drawable/ic_person_black_24dp"-->
+                            <!--/>-->
+                        <!--android:backgroundTint="@color/note_green"-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+                            <!--android:layout_toRightOf="@id/youths_image"-->
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:paddingTop="6dp"
+                                android:text="@string/elder_s_office"
+                                android:textColor="@color/blacktext" />
+
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp">
+
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Click Here" />
+                                <ImageView
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="@color/line" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/secretary_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardsMarginTop"
+                android:layout_weight="2"
+                android:elevation="@dimen/cardElevation"
+
+                android:padding="0dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <!--<ImageView-->
+                        <!--android:id="@+id/youths_image"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="3dp"-->
+                        <!--android:layout_marginRight="4dp"-->
+                        <!--android:background="@drawable/ic_person_black_24dp"-->
+                        <!--/>-->
+                        <!--android:backgroundTint="@color/note_green"-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+                            <!--android:layout_toRightOf="@id/youths_image"-->
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:paddingTop="6dp"
+                                android:text="@string/church_secretary_office"
+                                android:textColor="@color/blacktext" />
+
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp">
+
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Click Here" />
+                                <ImageView
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="@color/line" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/treasurer_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardsMarginTop"
+                android:layout_weight="2"
+                android:elevation="@dimen/cardElevation"
+
+                android:padding="0dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+                            <!--android:layout_toRightOf="@id/youths_image"-->
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:paddingTop="6dp"
+                                android:text="@string/treasurer_s_office"
+                                android:textColor="@color/blacktext" />
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp">
+
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Click Here" />
+                                <ImageView
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="@color/line" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/decons_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardsMarginTop"
+                android:layout_weight="2"
+                android:elevation="@dimen/cardElevation"
+
+                android:padding="0dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:paddingTop="6dp"
+                                android:text="Decons Department"
+                                android:textColor="@color/blacktext" />
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp">
+
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Click Here" />
+                                <ImageView
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="@color/line" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sabbath_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardsMarginTop"
+                android:layout_weight="2"
+                android:elevation="@dimen/cardElevation"
+
+                android:padding="0dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:paddingTop="6dp"
+                                android:text="Sabbath School"
+                                android:textColor="@color/blacktext" />
+
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp">
+
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Click Here" />
+                                <ImageView
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="@color/line" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/PersonalMinistries_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardsMarginTop"
+                android:layout_weight="2"
+                android:elevation="@dimen/cardElevation"
+
+                android:padding="0dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:paddingTop="6dp"
+                                android:text="Personal Ministries"
+                                android:textColor="@color/blacktext" />
+
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp">
+
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Click Here" />
+                                <ImageView
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="@color/line" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/family_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardsMarginTop"
+                android:layout_weight="2"
+                android:elevation="@dimen/cardElevation"
+
+                android:padding="0dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:paddingTop="6dp"
+                                android:text="Family Life"
+                                android:textColor="@color/blacktext" />
+
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp">
+
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Click Here" />
+                                <ImageView
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="@color/line" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/health_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardsMarginTop"
+                android:layout_weight="2"
+                android:elevation="@dimen/cardElevation"
+
+                android:padding="0dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:paddingTop="6dp"
+                                android:text="Health And Temparance"
+                                android:textColor="@color/blacktext" />
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp">
+
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Click Here" />
+                                <ImageView
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="@color/line" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/communication_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardsMarginTop"
+                android:layout_weight="2"
+                android:elevation="@dimen/cardElevation"
+
+                android:padding="0dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:paddingTop="6dp"
+                                android:text="Communication"
+                                android:textColor="@color/blacktext" />
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp">
+
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Click Here" />
+                                <ImageView
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="@color/line" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/youths_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardsMarginTop"
+                android:layout_weight="2"
+                android:elevation="@dimen/cardElevation"
+
+                android:padding="0dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:paddingTop="6dp"
+                                android:text="Youths "
+                                android:textColor="@color/blacktext" />
+
+
+                            <LinearLayout
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp">
+
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Click Here" />
+                                <ImageView
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="@color/line" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/pathfinders_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardsMarginTop"
+                android:layout_weight="2"
+                android:elevation="@dimen/cardElevation"
+
+                android:padding="0dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:paddingTop="6dp"
+                                android:text="Pathfinders"
+                                android:textColor="@color/blacktext" />
+
+
+                            <LinearLayout
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp">
+
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Click Here" />
+                                <ImageView
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="@color/line" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/womens_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardsMarginTop"
+                android:layout_weight="2"
+                android:elevation="@dimen/cardElevation"
+
+                android:padding="0dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:paddingTop="6dp"
+                                android:text="Women Department"
+                                android:textColor="@color/blacktext" />
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp">
+
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Click Here" />
+                                <ImageView
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="@color/line" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/amo_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardsMarginTop"
+                android:layout_weight="2"
+                android:elevation="@dimen/cardElevation"
+
+                android:padding="0dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:paddingTop="6dp"
+                                android:text="Adventist Men Organization(AMO)"
+                                android:textColor="@color/blacktext" />
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp">
+
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Click Here" />
+                                <ImageView
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="@color/line" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/music_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardsMarginTop"
+                android:layout_weight="2"
+                android:elevation="@dimen/cardElevation"
+
+                android:padding="0dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:paddingTop="6dp"
+                                android:text="Music"
+                                android:textColor="@color/blacktext" />
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp">
+
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Click Here" />
+                                <ImageView
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="@color/line" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/community_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cardsMarginTop"
+                android:layout_weight="2"
+                android:elevation="@dimen/cardElevation"
+
+                android:padding="0dp"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:paddingTop="6dp"
+                                android:text="Community Service"
+                                android:textColor="@color/blacktext" />
+
+
+
+
+                            <LinearLayout
+                                android:layout_marginTop="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingBottom="6dp"
+                                android:paddingTop="6dp">
+
+
+                                <TextView
+
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:text="Click Here" />
+                                <ImageView
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_chevron_right_black_24dp"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="@color/line" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

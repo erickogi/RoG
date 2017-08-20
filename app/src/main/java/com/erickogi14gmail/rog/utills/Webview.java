@@ -4,15 +4,12 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 
-import com.erickogi14gmail.rog.Events.EventsPojo;
 import com.erickogi14gmail.rog.R;
 import com.erickogi14gmail.rog.Sermons.TextSermonPojo;
 
@@ -29,22 +26,24 @@ public class Webview extends AppCompatActivity {
     private int position;
     private ArrayList<TextSermonPojo> textSermonPojo;
     private String preview;
+    FloatingActionButton fab;
+    TouchyWebView htmlWebView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        htmlWebView = (TouchyWebView) findViewById(R.id.webView);
         setSupportActionBar(toolbar);
 
-        Intent intent=getIntent();
-        if(intent.getBooleanExtra("isToday",false)){
-          String title=  intent.getStringExtra("title");
-           preview=   intent.getStringExtra("preview");
+        Intent intent = getIntent();
+        if (intent.getBooleanExtra("isToday", false)) {
+            String title = intent.getStringExtra("title");
+            preview = intent.getStringExtra("preview");
             getSupportActionBar().setTitle(title);
             set("trial.htm");
-        }
-        else {
+        } else {
             position = intent.getIntExtra("datapos", 0);
             textSermonPojo = (ArrayList<TextSermonPojo>) intent.getSerializableExtra("data");
             getSupportActionBar().setTitle(textSermonPojo.get(position).getSermon_title());
@@ -54,23 +53,41 @@ public class Webview extends AppCompatActivity {
         }
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              shareEvent(preview);
+                shareEvent(preview);
+            }
+        });
+        htmlWebView.setOnScrollChangedCallback(new TouchyWebView.OnScrollChangedCallback() {
+            @Override
+            public void onScrollChange(WebView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
+                if (scrollY > oldScrollY && scrollY > 0) {
+
+                    fab.hide();
+
+
+                }
+                if (scrollY < oldScrollY) {
+
+                    fab.show();
+
+                }
             }
         });
     }
-    private void shareEvent(String text){
+
+    private void shareEvent(String text) {
         Intent in = new Intent();
         in.setAction(Intent.ACTION_SEND);
-        in.putExtra(Intent.EXTRA_TEXT, text );
+        in.putExtra(Intent.EXTRA_TEXT, text);
         in.setType("text/plain");
         startActivity(in);
     }
-    public void set(String htmlFilename){
-        WebView htmlWebView = (WebView)findViewById(R.id.webView);
+
+    public void set(String htmlFilename) {
+
         WebSettings webSetting = htmlWebView.getSettings();
         webSetting.setJavaScriptEnabled(true);
         webSetting.setDisplayZoomControls(true);
@@ -79,22 +96,25 @@ public class Webview extends AppCompatActivity {
         AssetManager mgr = getBaseContext().getAssets();
         try {
             InputStream in = mgr.open(htmlFilename, AssetManager.ACCESS_BUFFER);
-            final   String htmlContentInStringFormat = StreamToString(in);
+            final String htmlContentInStringFormat = StreamToString(in);
             in.close();
 
-            htmlWebView.loadDataWithBaseURL(null,null,null,null,null);
+            htmlWebView.loadDataWithBaseURL(null, null, null, null, null);
             htmlWebView.loadDataWithBaseURL(null, htmlContentInStringFormat, "text/html", "utf-8", null);
-            htmlWebView.setWebViewClient(new WebViewClient() {
-
-
-
-            });
+//            htmlWebView.setWebViewClient(new WebViewClient() {
+//
+//
+//
+//            });
+            htmlWebView.setWebViewClient(new MyWebViewClient(this));
         } catch (IOException e) {
             // e.printStackTrace();
         }
+
     }
+
     public static String StreamToString(InputStream in) throws IOException {
-        if(in == null) {
+        if (in == null) {
             return "";
         }
         Writer writer = new StringWriter();

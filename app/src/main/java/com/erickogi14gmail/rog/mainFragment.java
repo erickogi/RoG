@@ -16,9 +16,14 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.erickogi14gmail.rog.Appointment.AppointmentFragment;
 import com.erickogi14gmail.rog.Bible.Bible;
+import com.erickogi14gmail.rog.Departments.Departments;
 import com.erickogi14gmail.rog.Hymns.FragmrntSongList;
+import com.erickogi14gmail.rog.Prayer.prayerMenu;
 import com.erickogi14gmail.rog.Sermons.Sermons;
+import com.erickogi14gmail.rog.Service.Service;
+import com.erickogi14gmail.rog.chat.Chat;
 import com.erickogi14gmail.rog.utills.Webview;
 
 /**
@@ -52,7 +57,7 @@ public class mainFragment extends Fragment {
     @Override
     public View onCreateView(final LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_main, container, false);
-        getActivity().setTitle("River Of God");
+        getActivity().setTitle("Church App");
         scrollview = (NestedScrollView) view.findViewById(R.id.scrollView);
         bottomNavigationView = (BottomNavigationView) getActivity().findViewById(R.id.bottom_navigation);
 
@@ -114,6 +119,7 @@ public class mainFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 //MainActivity.isMain=false;
+                popOutFragments();
                 fragment = new FragmrntSongList();
                 setUpView();
             }
@@ -121,12 +127,15 @@ public class mainFragment extends Fragment {
         openServices.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Services", Toast.LENGTH_SHORT).show();
+                popOutFragments();
+                fragment = new Service();
+                setUpView();
             }
         });
         openBible.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                popOutFragments();
                 fragment=new Bible();
                 setUpView();
             }
@@ -134,25 +143,31 @@ public class mainFragment extends Fragment {
         openAppointments.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Appointments", Toast.LENGTH_SHORT).show();
+                popOutFragments();
+                fragment = new AppointmentFragment();
+                setUpView();
             }
         });
         openPrayers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Prayers", Toast.LENGTH_SHORT).show();
+                popOutFragments();
+                fragment=new prayerMenu();
+                setUpView();
             }
         });
         openDepartments.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Departments", Toast.LENGTH_SHORT).show();
+                popOutFragments();
+                fragment = new Departments();
+                setUpView();
             }
         });
         openChats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Chats", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getActivity(),Chat.class));
             }
         });
 
@@ -164,8 +179,15 @@ public class mainFragment extends Fragment {
     void setUpView() {
         if (fragment != null) {
             FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.frame_container, fragment).addToBackStack(null).commit();
+            fragmentManager.beginTransaction().replace(R.id.frame_container, fragment)
+                    .addToBackStack(null).commit();
         }
 
+    }
+    void popOutFragments(){
+        FragmentManager fragmentManager=getActivity().getSupportFragmentManager();
+        for(int i=0;i<fragmentManager.getBackStackEntryCount();i++){
+            fragmentManager.popBackStack();
+        }
     }
 }

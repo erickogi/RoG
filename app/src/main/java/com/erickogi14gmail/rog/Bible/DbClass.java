@@ -15,21 +15,31 @@ public class DbClass extends SQLiteOpenHelper {
     public DbClass(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
-    String createTable="CREATE TABLE `t_kjv` (" +
-            "  `id` int(8)  NOT NULL," +
+    String createTable="CREATE TABLE `t_asv` (" +
+            "  `id` int(8) PRIMARY KEY  NOT NULL  ," +
             "  `b` int(11) NOT NULL," +
             "  `c` int(11) NOT NULL," +
             "  `v` int(11) NOT NULL," +
             "  `t` text NOT NULL"
             + ")";
+    String createTableBibleBookMarks="CREATE TABLE `bible_bookMarks` (" +
+            "  `id` int(8)  NOT NULL," +
+            "  `b` int(11) NOT NULL," +
+            "  `c` int(11) NOT NULL," +
+            "  `v` int(11) NOT NULL," +
+            "  `t` text NOT NULL"
+
+            + ")";
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(createTable);
+        db.execSQL(createTableBibleBookMarks);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + createTable);
+        db.execSQL("DROP TABLE IF EXISTS " + createTableBibleBookMarks);
 
 
 

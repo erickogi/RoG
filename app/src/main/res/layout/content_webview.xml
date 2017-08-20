@@ -12,19 +12,30 @@
 
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
 
-        <WebView
+        <!--<WebView-->
+
+
+            <!--android:id="@+id/webView"-->
+            <!--android:linksClickable="true"-->
+
+            <!--android:textIsSelectable="true"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <com.erickogi14gmail.rog.utills.TouchyWebView
 
 
             android:id="@+id/webView"
-            android:linksClickable="true"
-
-            android:textIsSelectable="true"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </ScrollView>
+            android:layout_height="wrap_content"
+
+            android:layout_margin="4dp"
+            android:linksClickable="true"
+            android:textIsSelectable="true" />
+    <!--</ScrollView>-->
 
 </RelativeLayout>

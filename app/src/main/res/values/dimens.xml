@@ -6,4 +6,13 @@
     <dimen name="menuCardMargin">8dp</dimen>
     <dimen name="app_bar_height">180dp</dimen>
     <dimen name="text_margin">16dp</dimen>
+
+
+
+
+
+
+    <dimen name="cardsMarginTop">0dp</dimen>
+    <dimen name="cardElevation">0dp</dimen>
+    <dimen name="cardCornerRadius">1dp</dimen>
 </resources>

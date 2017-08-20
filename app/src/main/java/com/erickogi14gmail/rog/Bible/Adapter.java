@@ -38,23 +38,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         BiblePojo biblePojo=modelList.get(position);
         holder.textViewT.setText(biblePojo.getT());
         holder.textViewCV.setText(String.valueOf(biblePojo.getC())+" : "+String.valueOf(biblePojo.getV()));
-        String bk="";
-        if(biblePojo.getB()==1){
-            bk="Genesis";
-        }
-        if(biblePojo.getB()==2){
-            bk="Exodus";
-        }
-        if(biblePojo.getB()==3){
-            bk="Leviticus";
-        }
-        if(biblePojo.getB()==4){
-            bk="Numbers";
-        }
-        if(biblePojo.getB()==5){
-            bk="Deutronomy";
-        }
-        holder.textViewB.setText(bk);
+
+        BibleRead bibleRead=new BibleRead();
+        holder.textViewB.setText(bibleRead.bookName(biblePojo.getB()));
 
 
     }

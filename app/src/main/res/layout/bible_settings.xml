@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/line" />
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/add"
+
+        android:clickable="true"
+        android:textAlignment="center"
+        android:textColor="@color/blacktext"
+        android:text="Add Bible"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/line" />
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/invalidate"
+        android:clickable="true"
+        android:textColor="@color/blacktext"
+        android:textAlignment="center"
+        android:layout_height="50dp"
+        android:text="Invalidate"
+        android:layout_width="match_parent"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/line" />
+    <!--<TextView-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:id="@+id/copy"-->
+        <!--android:clickable="true"-->
+        <!--android:textColor="@color/blacktext"-->
+        <!--android:textAlignment="center"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:text="Copy To Clipboard"-->
+        <!--android:layout_width="match_parent"/>-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:background="@color/line" />-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_margin="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:id="@+id/menu_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/todays_thought"
+
+        android:elevation="3dp"
+
+        android:padding="0dp"
+        app:cardCornerRadius="3dp"
+        tools:targetApi="lollipop">
+        <ImageView
+
+            android:scaleType="centerCrop"
+            android:src="@drawable/churchlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp" />
+        </android.support.v7.widget.CardView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/line" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/about_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:elevation="3dp"
+
+        android:padding="0dp"
+        app:cardCornerRadius="3dp"
+        tools:targetApi="lollipop">
+        <android.support.v4.widget.NestedScrollView
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="40dp"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:id="@+id/text"
+                android:textColor="@color/blacktext"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/line" />
+
+
+
+
+</LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/contacts_card"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/todays_thought"
+
+        android:elevation="3dp"
+
+        android:padding="0dp"
+        app:cardCornerRadius="3dp"
+        tools:targetApi="lollipop">
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/call"
+                android:backgroundTint="@color/colorAccent"
+                android:clickable="true"
+                android:src="@drawable/ic_call_black_24dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/chat"
+                android:backgroundTint="@color/colorAccent"
+                android:clickable="true"
+                android:src="@drawable/ic_chat_black_24dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/email"
+                android:backgroundTint="@color/colorAccent"
+                android:clickable="true"
+                android:src="@drawable/ic_email_black_24dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

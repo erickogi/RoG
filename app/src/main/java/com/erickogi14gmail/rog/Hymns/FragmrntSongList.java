@@ -1,5 +1,6 @@
 package com.erickogi14gmail.rog.Hymns;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomNavigationView;
@@ -16,6 +17,7 @@ import android.view.animation.DecelerateInterpolator;
 import com.erickogi14gmail.rog.R;
 import com.erickogi14gmail.rog.utills.RecyclerTouchListener;
 import com.erickogi14gmail.rog.utills.StaggeredHiddingScrollListener;
+import com.erickogi14gmail.rog.utills.Webview;
 
 import java.util.ArrayList;
 
@@ -34,7 +36,7 @@ public class FragmrntSongList extends Fragment {
     private BottomNavigationView bottomNavigationView ;
 
     private void setView(){
-        getActivity().setTitle("Events");
+        getActivity().setTitle("Songs");
         recyclerView=(RecyclerView)view.findViewById(R.id.notifications_recycleView);
         songAdapter=new SongAdapter(getContext(),populateList());
         songAdapter.notifyDataSetChanged();
@@ -58,7 +60,7 @@ public class FragmrntSongList extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         view=inflater.inflate(R.layout.songs_fragment,container,false);
-        getActivity().setTitle("Notices");
+        //getActivity().setTitle("Notices");
         setView();
         bottomNavigationView = (BottomNavigationView)getActivity().findViewById(R.id.bottom_navigation);
 
@@ -79,7 +81,8 @@ public class FragmrntSongList extends Fragment {
 
             @Override
             public void onClick(View view, int position) {
-
+                Intent intent=new Intent(getActivity(), Webview.class);
+                startActivity(intent);
             }
 
             @Override
