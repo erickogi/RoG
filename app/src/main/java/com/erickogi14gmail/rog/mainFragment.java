@@ -58,19 +58,19 @@ public class mainFragment extends Fragment {
     public View onCreateView(final LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_main, container, false);
         getActivity().setTitle("Church App");
-        scrollview = (NestedScrollView) view.findViewById(R.id.scrollView);
+      //  scrollview = (NestedScrollView) view.findViewById(R.id.scrollView);
         bottomNavigationView = (BottomNavigationView) getActivity().findViewById(R.id.bottom_navigation);
-
-        scrollview.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
-            @Override
-            public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
-                if (scrollY > oldScrollY) {
-                    hideViews();
-                } else {
-                    showViews();
-                }
-            }
-        });
+//
+//        scrollview.setOnScrollChangeListener(new NestedScrollView.OnScrollChangeListener() {
+//            @Override
+//            public void onScrollChange(NestedScrollView v, int scrollX, int scrollY, int oldScrollX, int oldScrollY) {
+//                if (scrollY > oldScrollY) {
+//                    hideViews();
+//                } else {
+//                    showViews();
+//                }
+//            }
+//        });
 
 
         openAbout = (CardView) view.findViewById(R.id.openAbout);

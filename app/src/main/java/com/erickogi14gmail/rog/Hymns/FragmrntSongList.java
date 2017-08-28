@@ -81,7 +81,11 @@ public class FragmrntSongList extends Fragment {
 
             @Override
             public void onClick(View view, int position) {
-                Intent intent=new Intent(getActivity(), Webview.class);
+                Intent intent = new Intent(getActivity(), Webview.class);
+                intent.putExtra("isToday", true);
+                intent.putExtra("title", "");
+                intent.putExtra("preview", "");
+
                 startActivity(intent);
             }
 

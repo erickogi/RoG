@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/churchlogo"
+    android:backgroundTint="@color/colorAccent"
+    android:background="@color/colorAccent"
     android:orientation="vertical"
 
 
@@ -111,6 +112,8 @@
 
 
     <android.support.v7.widget.CardView
+        android:layout_marginBottom="50dp"
+        android:background="@color/colorAccent"
         android:id="@+id/menu_card"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -122,12 +125,15 @@
         app:cardCornerRadius="3dp"
         tools:targetApi="lollipop">
         <!--app:cardUseCompatPadding="true"-->
-        <android.support.v4.widget.NestedScrollView
-            android:id="@+id/scrollView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <!--<android.support.v4.widget.NestedScrollView-->
+            <!--android:background="@color/colorAccent"-->
+            <!--android:id="@+id/scrollView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
 
             <LinearLayout
+                android:background="@color/colorAccent"
+                android:backgroundTint="@color/colorAccent"
                 android:layout_width="match_parent"
 
                 android:layout_height="match_parent"
@@ -136,17 +142,17 @@
             <!--android:background="@drawable/churchlogo"-->
 
                 <LinearLayout
-                    android:layout_width="match_parent"
 
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
                     android:orientation="horizontal">
 
-
+                    <!--android:background="@color/colorAccent"-->
                     <android.support.v7.widget.CardView
                         android:id="@+id/openSermons"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/menuCardMargin"
+                        android:layout_height="match_parent"
 
                         android:layout_weight="1"
                         android:elevation="3dp"
@@ -180,8 +186,8 @@
                     <android.support.v7.widget.CardView
                         android:id="@+id/openHyms"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/menuCardMargin"
+                        android:layout_height="match_parent"
+
                         android:layout_weight="1"
                         android:elevation="3dp"
                         android:padding="0dp"
@@ -212,8 +218,8 @@
                     <android.support.v7.widget.CardView
                         android:id="@+id/openServicesShedules"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/menuCardMargin"
+                        android:layout_height="match_parent"
+
                         android:layout_weight="1"
                         android:elevation="3dp"
                         android:padding="4dp"
@@ -249,16 +255,17 @@
                 <LinearLayout
                     android:layout_width="match_parent"
 
-                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
                     android:orientation="horizontal">
 
 
                     <android.support.v7.widget.CardView
                         android:id="@+id/openBible"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
 
-                        android:layout_margin="@dimen/menuCardMargin"
+
                         android:layout_weight="1"
                         android:elevation="3dp"
                         android:padding="0dp"
@@ -291,8 +298,8 @@
                     <android.support.v7.widget.CardView
                         android:id="@+id/openAppointment"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/menuCardMargin"
+                        android:layout_height="match_parent"
+
                         android:layout_weight="1"
                         android:elevation="3dp"
                         android:padding="0dp"
@@ -324,8 +331,8 @@
                     <android.support.v7.widget.CardView
                         android:id="@+id/openPrayer"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/menuCardMargin"
+                        android:layout_height="match_parent"
+
                         android:layout_weight="1"
                         android:elevation="3dp"
                         android:padding="4dp"
@@ -360,17 +367,18 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+
                     android:orientation="horizontal">
 
 
                     <android.support.v7.widget.CardView
                         android:id="@+id/openDepartments"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
 
-                        android:layout_margin="@dimen/menuCardMargin"
+
                         android:layout_weight="1"
                         android:elevation="3dp"
                         android:padding="0dp"
@@ -403,8 +411,8 @@
                     <android.support.v7.widget.CardView
                         android:id="@+id/openChats"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/menuCardMargin"
+                        android:layout_height="match_parent"
+
                         android:layout_weight="1"
                         android:elevation="3dp"
                         android:padding="0dp"
@@ -436,8 +444,8 @@
                     <android.support.v7.widget.CardView
                         android:id="@+id/openAbout"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/menuCardMargin"
+                        android:layout_height="match_parent"
+
                         android:layout_weight="1"
                         android:elevation="3dp"
                         android:padding="4dp"
@@ -469,16 +477,9 @@
 
                 </LinearLayout>
 
-                <!--<ImageView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:fitsSystemWindows="true"-->
-                    <!--android:scaleType="centerCrop"-->
-                    <!--android:src="@drawable/congretion" />-->
-
-
+            =
             </LinearLayout>
-        </android.support.v4.widget.NestedScrollView>
+        <!--</android.support.v4.widget.NestedScrollView>-->
 
     </android.support.v7.widget.CardView>
 

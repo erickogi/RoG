@@ -269,32 +269,32 @@ if(a<66) {
         }
         return returnString.toString();
     }
-    public boolean fill() {
-        // String names[]={"Genesis.txt","Exodus.txt","Leviticus.txt","Numbers.txt","Deutronomy.txt"};
-        String names="INSERT1.txt";
-        for (int am = 0; am < 1; am++) {
-            String query = ReadFromfile(names, getApplicationContext());
-            Log.d("GTk","hhhhhh"+query);
-            DBOperation dbOperation = new DBOperation(getApplicationContext());
-
-            //  String qs[] = query.split("||");
-
-            //  for (int a = 0; a < qs.length; a++) {
-            if (dbOperation.insert(query)) {
-                // return  true;
-                Log.d("GTk","DONE");
-
-            }
-            else{
-                Log.d("GTk","NOT DONE");
-            }
-
-            // }
-
-
-        }
-        return  true;
-    }
+//    public boolean fill() {
+//        // String names[]={"Genesis.txt","Exodus.txt","Leviticus.txt","Numbers.txt","Deutronomy.txt"};
+//        String names="INSERT1.txt";
+//        for (int am = 0; am < 1; am++) {
+//            String query = ReadFromfile(names, getApplicationContext());
+//            Log.d("GTk","hhhhhh"+query);
+//            DBOperation dbOperation = new DBOperation(getApplicationContext());
+//
+//            //  String qs[] = query.split("||");
+//
+//            //  for (int a = 0; a < qs.length; a++) {
+//            if (dbOperation.insert(query)) {
+//                // return  true;
+//                Log.d("GTk","DONE");
+//
+//            }
+//            else{
+//                Log.d("GTk","NOT DONE");
+//            }
+//
+//            // }
+//
+//
+//        }
+//        return  true;
+//    }
     private boolean check(){
         return dbOperation.getList(66, 22, 1) != null;
     }
